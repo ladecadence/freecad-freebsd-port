@@ -49,7 +49,3 @@ CMAKE_ARGS=	-DFREECAD_USE_EXTERNAL_PIVY=1 -DCMAKE_BUILD_TYPE=Release \
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 .include <bsd.port.mk>
-
-mytest:
-	echo ${PYTHON_PKGNAMEPREFIX}">>>>>>>>>>>>>>>>>>"
-
