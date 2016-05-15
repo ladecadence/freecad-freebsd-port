@@ -44,8 +44,11 @@ PLIST_SUB=	PORTVERSION=${PORTVERSION}
 CMAKE_ARGS=	-DFREECAD_USE_EXTERNAL_PIVY=1 -DCMAKE_BUILD_TYPE=Release \
 		-DOCC_INCLUDE_DIR=/usr/local/include/OpenCASCADE \
 		-DDOXYGEN_EXECUTABLE=/usr/local/bin/doxygen \
-		-DBOOST_LIBRARYDIR=/usr/local/lib/boost 
-#CMAKE_VERBOSE=	yes	
+		-DBOOST_LIBRARYDIR=/usr/local/lib/boost \
+		-DCMAKE_LIBRARY_PATH=/usr/local/lib
+ 
+CMAKE_VERBOSE=	yes	
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 .include <bsd.port.mk>
+
